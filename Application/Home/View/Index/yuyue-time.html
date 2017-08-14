@@ -15,24 +15,10 @@
 </style>
 <body>
 	<div class="weui-cells weui-cells_form">
-      <div class="weui-cell weui-cell_vcode" style="height: 44px;">
-        <div class="weui-cell__hd">
-          <label class="weui-label">手机号</label>
-        </div>
+      <div class="weui-cell">
+        <div class="weui-cell__hd"><label for="time-format" class="weui-label">选择时间</label></div>
         <div class="weui-cell__bd">
-          <input class="weui-input" type="tel" placeholder="请输入手机号">
-        </div>
-        
-      </div>
-      <div class="weui-cell weui-cell_vcode">
-        <div class="weui-cell__hd">
-          <label class="weui-label">验证码</label>
-        </div>
-        <div class="weui-cell__bd">
-          <input class="weui-input" type="tel" placeholder="请输入验证码">
-        </div>
-        <div class="weui-cell__ft">
-          <button class="weui-vcode-btn">获取验证码</button>
+          <input class="weui-input" id="time-format" type="text" value="" readonly="" placeholder="选择时间">
         </div>
       </div>
       <div class="weui-cell">
@@ -41,10 +27,18 @@
           <input class="weui-input" id="start" type="text" value="" readonly="" placeholder="请选择地址">
         </div>
       </div>
+      <div class="weui-cell weui-cell_vcode" style="height: 44px;">
+        <div class="weui-cell__hd">
+          <label class="weui-label">详细地址</label>
+        </div>
+        <div class="weui-cell__bd">
+          <input class="weui-input" type="tel" placeholder="请输入详细地址">
+        </div>
+      </div>
     </div>
 	<!-- 按钮 -->
 	<div class="demos-content-padded">
-      <a href="javascript:;" class="weui-btn weui-btn_primary">完成</a>
+      <a href="javascript:;" class="weui-btn weui-btn_primary">确定预约</a>
     </div>
 	<script src="__PUBLIC__/js/jquery-2.1.4.js"></script>
 	<script src="__PUBLIC__/js/jquery-weui.min.js"></script>
@@ -52,13 +46,49 @@
 	<script src="__PUBLIC__/js/city-picker.js"></script>
 	<script src="__PUBLIC__/js/vue.min.js"></script>
 	<script>
-	$("#start").cityPicker({
+      //地址
+	   $("#start").cityPicker({
         title: "选择出发地",
         onChange: function (picker, values, displayValues) {
           console.log(values, displayValues);
         }
       });
-      
+      //时间
+       $("#time-format").datetimePicker({
+        title: '自定义格式',
+        yearSplit: '年',
+        monthSplit: '月',
+        dateSplit: '日',
+        times: function () {
+          return [  // 自定义的时间
+            {
+              values: (function () {
+                var hours = [];
+                for (var i=0; i<24; i++) hours.push(i > 9 ? i : '0'+i);
+                return hours;
+              })()
+            },
+            {
+              divider: true,  // 这是一个分隔符
+              content: '时'
+            },
+            {
+              values: (function () {
+                var minutes = [];
+                for (var i=0; i<59; i++) minutes.push(i > 9 ? i : '0'+i);
+                return minutes;
+              })()
+            },
+            {
+              divider: true,  // 这是一个分隔符
+              content: '分'
+            }
+          ];
+        },
+        onChange: function (picker, values, displayValues) {
+          console.log(values);
+        }
+      });
 	</script>
 </body>
 </html>
