@@ -1,0 +1,71 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>快递宝-流转箱子</title>
+	<link rel="stylesheet" href="/kuaidi/Public/css/weui.min.css">
+</head>
+<style>
+.weui-cells{margin-top:0; }
+.weui-btn.weui-btn_primary{background-color:#128BDA;width: 90%;margin: 30px auto;}
+.weui-cells_radio .weui-check:checked+.weui-icon-checked:before{color:#fff;background-color:#128BDA;}
+.weui-cells_radio .weui-cell__ft .weui-icon-checked:after {
+    /*color: #fff;
+    border:1px solid #ddd;
+    content: "";
+    display: block;
+    content: "\EA08";
+    font-size: 16px;
+    box-sizing: border-box;*/
+}
+</style>
+<body>
+
+	<div class="center">
+		<div class="weui-cell">
+            <div class="weui-cell__bd">
+              <p>我的箱子</p>
+            </div>
+            <div class="weui-cell__ft" id="all">全选</div>
+         </div>
+		<div class="weui-cells weui-cells_radio">
+	      <label class="weui-cell weui-check__label" for="x11">
+	        <div class="weui-cell__bd">
+	          <p>37859657585974</p>
+	        </div>
+	        <div class="weui-cell__ft">
+	          <input type="checkbox" class="weui-check" name="radio1" id="x11">
+	          <span class="weui-icon-checked"></span>
+	        </div>
+	      </label>
+	      <label class="weui-cell weui-check__label" for="x12">
+			<div class="weui-cell__bd">
+	          <p>8934798598456</p>
+	        </div>
+	        <div class="weui-cell__ft">
+	          <input type="checkbox" name="radio1" class="weui-check" id="x12" checked="checked">
+	          <span class="weui-icon-checked"></span>
+	        </div>
+	      </label>
+	    </div>
+	</div>
+	<div class="demos-content-padded">
+      <a href="javascript:;" class="weui-btn weui-btn_primary">确认收件</a>
+    </div>
+	<script src="/kuaidi/Public/js/jquery-2.1.4.js"></script>
+	<script src="/kuaidi/Public/js/jquery-weui.min.js"></script>
+	<script src="/kuaidi/Public/js/vue.min.js"></script>
+	<script>
+		var all   = document.getElementById("all");
+		var radio = document.getElementsByClassName("weui-check");
+		all.addEventListener('click',function(){
+			len = radio.length;
+			for(var i=0;i<len; i++){   //循环出来
+				radio[i].setAttribute("checked", "checked");//全选
+			}
+		});
+	</script>
+</body>
+</html>

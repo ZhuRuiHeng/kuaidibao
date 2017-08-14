@@ -1,0 +1,149 @@
+
+body{
+	background: #f6f6f6;
+}
+.my1-head{
+	height: 200px;width: 100%;display: block;background: url(../images/banner.png) no-repeat;background-size: cover;
+}
+.my1-sec .list-all li i img{
+	width:12px;
+	vertical-align: middle;
+}
+.tool-right{
+	position: absolute;
+    right: 13px;
+    font-size: 14px;
+    color: #fff;
+    width: 72px;
+    text-align: right;
+}
+.top-content .nickimg{
+	background: url(../img/blank_white.png) no-repeat;
+	background-position: 0px 30px;
+	background-size: 100%;
+}
+.top-content .phone,.top-content .jifen,.type,.list-all ul li,footer,.page,.weui-tabbar__item{
+	background: #fff;
+}
+.tool-right .address{
+	margin-left: 10px;
+}
+.tool-right img,.tool-left img{
+	width: 20px;
+    top:12px;
+    position: relative;
+}
+.tool-right a,.tool-left a{
+	display: block;
+}
+.top-content{
+	text-align: center;
+	padding-top: 52px;
+}
+.nickimg img{
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    width: 68px;
+    height: 68px;
+}
+.nickname h4{
+	font-size: 16px;
+    display: inline-block;
+    color: #000;
+    max-width: 217px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.nickname b.sex_g{
+	margin-left: 6px;
+	width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    display: inline-block;
+    background: url(../img/ic_nearby_girl.png) no-repeat center;
+    /*background: url(../img/ic_nearby_boy.png) no-repeat center;*/
+    background-size: 12px;
+}
+.nickname b.sex_b{
+	margin-left: 6px;
+	width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    display: inline-block;
+    background: url(../img/ic_nearby_boy.png) no-repeat center;
+    background-size: 12px;
+}
+.top-content .phone,.top-content .jifen{
+	color: #000;
+	height: 22px;
+	line-height: 22px;
+	font-size: 14px;
+}
+.my1-sec .list-all li{
+	height: 46px;
+	line-height: 46px;
+	font-size: 15px;
+	color: #515151;
+	position: relative;
+	padding:0 20px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-top: 1px solid #ddd;
+}
+.my1-sec .list-all li a{
+	display: block;
+}
+.my1-sec .list-all li i{
+	position: absolute;
+	right: 20px;
+	top:0;
+}
+.list-all ul{
+	margin-bottom: 60px;
+}
+/*涓汉璧勬枡*/
+
+.line_top{
+	margin-top: 12px;
+}
+.line_bor{
+	border-bottom: 1px solid #ddd;
+}
+ol.type{
+	display: flex;
+	text-align: center;
+	height: 48px;
+    line-height: 48px;
+    border-top: 1px solid #ddd;
+}
+ol.type li a{
+	color: #000;
+}
+ol.type li{
+	flex:1;
+	font-size: 16px;
+	text-align: center;
+    display: inline-block;
+}
+ol.type li:first-child{
+	border-right: 1px solid #ddd;
+	box-sizing: border-box;
+}
+ol.type li a{
+	display: block;
+}
+ol.type li a p{
+	height: 22px;
+	line-height: 22px;
+}
+ol.type li a em img{
+	width: 24px;
+	vertical-align: middle;
+	padding-right: 6px;
+}
+.weui-cells{
+	margin-top:10px;
+}
