@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<title>快递宝-流转箱子</title>
+	<title>接收箱子</title>
 	<link rel="stylesheet" href="/kuaidi/Public/css/weui.min.css">
 </head>
 <style>
@@ -26,33 +26,24 @@
 	<div class="center">
 		<div class="weui-cell">
             <div class="weui-cell__bd">
-              <p>我的箱子</p>
+              <p>箱子编号</p>
             </div>
-            <div class="weui-cell__ft" id="all">全选</div>
          </div>
 		<div class="weui-cells weui-cells_radio">
 	      <label class="weui-cell weui-check__label" for="x11">
 	        <div class="weui-cell__bd">
 	          <p>37859657585974</p>
 	        </div>
-	        <div class="weui-cell__ft">
-	          <input type="checkbox" class="weui-check" name="radio1" id="x11">
-	          <span class="weui-icon-checked"></span>
-	        </div>
 	      </label>
 	      <label class="weui-cell weui-check__label" for="x12">
 			<div class="weui-cell__bd">
 	          <p>8934798598456</p>
 	        </div>
-	        <div class="weui-cell__ft">
-	          <input type="checkbox" name="radio1" class="weui-check" id="x12" checked="checked">
-	          <span class="weui-icon-checked"></span>
-	        </div>
 	      </label>
 	    </div>
 	</div>
 	<div class="demos-content-padded">
-      <a href="javascript:;" class="weui-btn weui-btn_primary">确认收件</a>
+      <a href="javascript:;" class="weui-btn weui-btn_primary">确认接收</a>
     </div>
 	<script src="/kuaidi/Public/js/jquery-2.1.4.js"></script>
 	<script src="/kuaidi/Public/js/jquery-weui.min.js"></script>

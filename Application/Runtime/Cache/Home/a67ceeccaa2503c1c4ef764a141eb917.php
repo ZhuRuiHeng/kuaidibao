@@ -2,11 +2,12 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<title>流转成功</title>
+	<title>回收</title>
 	<link rel="stylesheet" href="/kuaidi/Public/css/weui.min.css">
 <style>
 .weui-btn.weui-btn_primary{background-color:#128BDA;width: 90%;margin: 30px auto;}
-.center,.ewm{margin: 30px auto;text-align: center;}
+.ewm{margin: 30px auto;text-align: center;}
+.center{margin: 10px auto;text-align: center;}
 .ewm img{
 	width: 120px;
 	height: 120px;
@@ -35,20 +36,15 @@
 		<img src="/kuaidi/Public/images/chenggong.png" alt="流转成功">
 	</div>
 	<div class="center">
-		<p>流转成功！</p>
+		<p>扫码成功！</p>
 	</div>
+  <div class="center">
+    <p>箱子编号</p>
+    <p>3285906457089643</p>
+  </div>
 	<!-- 按钮 -->
-	<div class="weui-flex">
-      <div class="weui-flex__item">
-      	<div class="placeholder one">
-      		<span>返回首页</span>
-      	</div>
-      </div>
-      <div class="weui-flex__item">
-      	<div class="placeholder two">
-      		<span>查看我的箱子</span>
-      	</div>
-      </div>
+	<div class="demos-content-padded">
+      <a href="javascript:;" class="weui-btn weui-btn_primary">确认收件</a>
     </div>
 	<script src="/kuaidi/Public/js/jquery-2.1.4.js"></script>
 	<script src="/kuaidi/Public/js/jquery-weui.min.js"></script>
