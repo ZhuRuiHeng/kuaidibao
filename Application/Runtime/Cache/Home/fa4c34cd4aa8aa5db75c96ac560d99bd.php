@@ -18,7 +18,7 @@
 <body>
 
 	<div class="xz-list">
-		<div class="weui-panel weui-panel_access">
+		<div class="weui-panel weui-panel_access" id="jieshou1">
 			  <div class="weui-panel__bd">
 				    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
 				      <div class="weui-media-box__bd">
@@ -31,12 +31,12 @@
 				        </p>
 				      </div>
 				      <div class="weui-media-box__hd">
-				        <button>接收</button>
+				        <button onclick="jieshou(this,1)">接收</button>
 				      </div>
 				    </a>
 			   </div>
 		</div>
-		<div class="weui-panel weui-panel_access">
+		<div class="weui-panel weui-panel_access" id="jieshou2">
 			  <div class="weui-panel__bd">
 				    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
 				      <div class="weui-media-box__bd">
@@ -49,7 +49,7 @@
 				        </p>
 				      </div>
 				      <div class="weui-media-box__hd">
-				        <button>接收</button>
+				        <button onclick="jieshou(this,2)">接收</button>
 				      </div>
 				    </a>
 			   </div>
@@ -59,6 +59,10 @@
 	<script src="/kuaidi/Public/js/jquery-weui.min.js"></script>
 	<script src="/kuaidi/Public/js/vue.min.js"></script>
 	<script>
+		function jieshou(obj,id){
+			console.log(id);
+			window.location.href="<?php echo U('Index/shoujian');?>?id="+id;
+		}
 	</script>
 </body>
 </html>

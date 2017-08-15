@@ -42,13 +42,13 @@
 	</header>
 	<!-- 6宫格 -->
 	<div class="weui-flex">
-      <div class="weui-flex__item">
+      <div class="weui-flex__item" onclick="javascript:window.location.href='<?php echo U('Index/fajian');?>'">
       	<div class="placeholder one">
       		<span>发件</span>
       		<img src="/kuaidi/Public/images/fa.png" alt="">
       	</div>
       </div>
-      <div class="weui-flex__item">
+      <div class="weui-flex__item" onclick="javascript:window.location.href='<?php echo U('Index/shoujian');?>'">
       	<div class="placeholder two">
       		<span>收件</span>
       		<img src="/kuaidi/Public/images/shou.png" alt="">
@@ -56,13 +56,13 @@
       </div>
     </div>
     <div class="weui-flex">
-      <div class="weui-flex__item">
+      <div class="weui-flex__item" onclick="javascript:window.location.href='<?php echo U('Index/liuzhuang');?>'">
       	<div class="placeholder three">
       		<span>流转</span>
       		<img src="/kuaidi/Public/images/liuzhuang.png" alt="">
       	</div>
       </div>
-      <div class="weui-flex__item">
+      <div class="weui-flex__item" onclick="javascript:window.location.href='<?php echo U('Index/jieshou-xiangzi');?>'">
       	<div class="placeholder four">
       		<span>回收</span>
       		<img src="/kuaidi/Public/images/huishou.png" alt="">
@@ -70,13 +70,13 @@
       </div>
     </div>
     <div class="weui-flex">
-      <div class="weui-flex__item">
+      <div class="weui-flex__item" onclick="javascript:window.location.href='<?php echo U('Index/wode');?>'">
       	<div class="placeholder five">
       		<span>个人中心</span>
       		<img src="/kuaidi/Public/images/gerenzhongxin.png" alt="">
       	</div>
       </div>
-      <div class="weui-flex__item">
+      <div class="weui-flex__item" onclick="javascript:window.location.href='<?php echo U('Index/kefu');?>'">
       	<div class="placeholder six">
       		<span>客服</span>
 			<img src="/kuaidi/Public/images/kefu.png" alt="">
