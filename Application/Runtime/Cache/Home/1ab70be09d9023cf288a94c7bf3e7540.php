@@ -8,27 +8,17 @@
 .weui-btn.weui-btn_primary{background-color:#128BDA;width: 90%;margin: 30px auto;}
 .weui-cell__ft,.weui-cells__title{color:#000;}
 .weui-cells{margin-top:0; }
-{color: #fff;
-    border: 1px solid #ddd;
-    content: "";
-    display: block;
-    content: "EA08";
-    font-size: 16px;
-    box-sizing: border-box;}
-    .weui-cells_radio .weui-check:checked+.weui-icon-checked:before {
-    color: #fff;
-    background-color: #128BDA;
+span.weui-icon-checked{
+  display: inline-block;
+  width: 20;
+  height: 20px;
+  margin-right: 10px;
+  background: url(/kuaidi/Public/images/1.png) no-repeat;
+  background-size: contain;
 }
-.weui-cells_radio .weui-check:checked+.weui-icon-checked:before {
-    display: block;
-    content: "\EA08";
-    color: #09bb07;
-    font-size: 16px;
-}
-[class*=" weui-icon-"]:before, [class^=weui-icon-]:before {
-    display: inline-block;
-    margin-left: .2em;
-    margin-right: .2em;
+span.weui-icon-checked.active{
+  background: url(/kuaidi/Public/images/2.png) no-repeat;
+  background-size: contain;
 }
 </style>
 </head>
@@ -37,13 +27,13 @@
   <div class="bd">
       <div class="page__bd">
         <div class="weui-cells__title">选择类型</div>
-        <div class="weui-cells">
+        <div class="weui-cells" id="xuanze">
           <a class="weui-cell weui-cell_access" href="javascript:;">
             <div class="weui-cell__bd">
-              <p><span class="weui-icon-checked"></span>丢失</p>
+              <p><span class="weui-icon-checked active"  ></span>丢失</p>
             </div>
             <div class="weui-cell__bd">
-              <p><span class="weui-icon-checked"></span>损坏</p>
+              <p><span class="weui-icon-checked"  ></span>损坏</p>
             </div>
           </a>
         </div>
@@ -73,7 +63,7 @@
 	<script src="/kuaidi/Public/js/jquery-weui.min.js"></script>
 	<script src="/kuaidi/Public/js/vue.min.js"></script>
 	<script>
+    
 	</script>
-  
 </body>
 </html>
