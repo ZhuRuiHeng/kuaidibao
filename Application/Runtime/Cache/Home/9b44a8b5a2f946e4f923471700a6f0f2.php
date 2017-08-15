@@ -2,28 +2,27 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<title>押金</title>
+	<title>绑定文件</title>
 	<link rel="stylesheet" href="/kuaidi/Public/css/weui.min.css">
 <style>
 .weui-btn.weui-btn_primary{background-color:#128BDA;width: 90%;margin: 30px auto;}
-.ewm{    margin: 30px auto;
-    text-align: center;
-    width: 120px;
-    height: 60px;    padding: 30px 0;
-    border: 1px solid #ddd;
-    border-radius: 50%;}
-.ewm span{display: inline-block;}
+.center,.ewm{margin: 30px auto;text-align: center;}
+.ewm img{
+	width: 120px;
+	height: 120px;
+}
+.center p{text-align: center;height: 36px;line-height: 36px;}
+
 </style>
 </head>
 
 <body>
 	<div class="ewm">
-		<span>100</span><br>
-    <span>押金</span>
+		<img style="width: 40%;height: inherit;" src="/kuaidi/Public/images/wechat.png" alt="流转成功">
 	</div>
 	<!-- 按钮 -->
 	<div class="demos-content-padded">
-      <a href="javascript:;" class="weui-btn weui-btn_primary">退还押金</a>
+      <a href="javascript:;" class="weui-btn weui-btn_primary">开始绑定</a>
     </div>
 	<script src="/kuaidi/Public/js/jquery-2.1.4.js"></script>
 	<script src="/kuaidi/Public/js/jquery-weui.min.js"></script>
