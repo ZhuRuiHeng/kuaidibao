@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<title>快递宝-注册</title>
-	<link rel="stylesheet" href="__PUBLIC__/css/weui.min.css">
+	<link rel="stylesheet" href="/kuaidi/Public/css/weui.min.css">
 </head>
 <style>
 .weui-btn.weui-btn_primary{background-color:#128BDA;width: 90%;margin: 30px auto;}
@@ -22,7 +22,7 @@
       <div class="weui-cell">
         <div class="weui-cell__hd"><label class="weui-label">密码</label></div>
         <div class="weui-cell__bd">
-          <input class="weui-input" type="password"  placeholder="请输入密码">
+          <input class="weui-input" type="text"  placeholder="请输入密码">
         </div>
       </div>
       <div class="weui-cell">
@@ -52,9 +52,9 @@
 	<div class="demos-content-padded">
       <a href="javascript:;" class="weui-btn weui-btn_primary">下一步</a>
     </div>
-	<script src="__PUBLIC__/js/jquery-2.1.4.js"></script>
-	<script src="__PUBLIC__/js/jquery-weui.min.js"></script>
-	<script src="__PUBLIC__/js/vue.min.js"></script>
+	<script src="/kuaidi/Public/js/jquery-2.1.4.js"></script>
+	<script src="/kuaidi/Public/js/jquery-weui.min.js"></script>
+	<script src="/kuaidi/Public/js/vue.min.js"></script>
 	<script>
 	</script>
 </body>
