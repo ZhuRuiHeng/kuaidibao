@@ -29,7 +29,7 @@
           <label class="weui-label">验证码</label>
         </div>
         <div class="weui-cell__bd">
-          <input class="weui-input" type="tel" placeholder="请输入验证码">
+          <input class="weui-input" type="text" placeholder="请输入验证码">
         </div>
         <div class="weui-cell__ft">
           <button class="weui-vcode-btn">获取验证码</button>
@@ -60,11 +60,11 @@
     });
   // 注册
   $('#zhuce').click(function (){
-        var tel = $('.number').val();
+        var iphone = $('.number').val();
         var dizhi = $('.dizhi').val();
        
     
-        if(tel==''){
+        if(iphone==''){
           alert('手机号不能为空');
           return false;
         }
@@ -74,14 +74,13 @@
         }
         
         //判断验证码
-        $.post("{:U('Index/login')}",{tel:tel,dizhi:dizhi},function (d){
+        $.post("{:U('Index/login')}",{iphone:iphone,dizhi:dizhi},function (d){
           if(d.state=='1'){
-            alert(1);
+            
            alert(d.message);
             return false;
           }else{
-             alert(tel);
-          window.location.href="{:U('Index/login')}";
+            window.location.href="{:U('Index/index')}";
            
           }
         })
